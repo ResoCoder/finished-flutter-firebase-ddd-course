@@ -60,7 +60,7 @@ class ServerTimestampConverter implements JsonConverter<FieldValue, Object> {
 extension NoteDtoX on NoteDto {
   Note toDomain() {
     return Note(
-      id: UniqueId.fromFirebaseId(id),
+      id: UniqueId.fromUniqueString(id),
       body: NoteBody(body),
       color: NoteColor(Color(color)),
       todos: List3(todos.map((dto) => dto.toDomain()).toImmutableList()),
@@ -91,7 +91,7 @@ abstract class TodoItemDto with _$TodoItemDto {
 extension TodoItemDtoX on TodoItemDto {
   TodoItem toDomain() {
     return TodoItem(
-      id: UniqueId.fromFirebaseId(id),
+      id: UniqueId.fromUniqueString(id),
       name: TodoName(name),
       done: done,
     );
