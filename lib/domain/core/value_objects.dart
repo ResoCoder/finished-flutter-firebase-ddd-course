@@ -57,10 +57,11 @@ class UniqueId extends ValueObject<String> {
     );
   }
 
-  factory UniqueId.fromFirebaseId(String firebaseId) {
-    assert(firebaseId != null);
+  /// Used with strings we trust are unique, such as database IDs.
+  factory UniqueId.fromUniqueString(String uniqueIdStr) {
+    assert(uniqueIdStr != null);
     return UniqueId._(
-      right(firebaseId),
+      right(uniqueIdStr),
     );
   }
 
