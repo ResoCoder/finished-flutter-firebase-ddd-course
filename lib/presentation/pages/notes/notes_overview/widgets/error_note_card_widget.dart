@@ -22,19 +22,19 @@ class ErrorNoteCard extends StatelessWidget {
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .primaryTextTheme
-                  .bodyText2
+                  .body2
                   .copyWith(fontSize: 18),
             ),
             const SizedBox(height: 2),
             Text(
               'Details for nerds:',
               textAlign: TextAlign.center,
-              style: Theme.of(context).primaryTextTheme.bodyText2,
+              style: Theme.of(context).primaryTextTheme.body2,
             ),
             Text(
               note.failureOption.fold(() => '', (f) => f.toString()),
               textAlign: TextAlign.center,
-              style: Theme.of(context).primaryTextTheme.bodyText2,
+              style: Theme.of(context).primaryTextTheme.body2,
             ),
           ],
         ),
