@@ -16,3 +16,22 @@ Note: You need to provide your own Firebase configuration files in order to run 
 [![Reso Coder](https://resocoder.com/wp-content/uploads/2019/09/logo_with_text_signature.png)](https://resocoder.com)
 <br />
 _Be prepared for **real** app development_
+
+Features of Flutter
+
+Flutter framework offers the following features to developers −
+
+    Modern and reactive framework.
+
+    Uses Dart programming language and it is very easy to learn.
+
+    Fast development.
+
+    Beautiful and fluid user interfaces.
+
+    Huge widget catalog.
+
+    Runs same UI for multiple platforms.
+
+    High performance application.
+
